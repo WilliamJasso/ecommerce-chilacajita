@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Chilacajita</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">
+            <img
+              src="media/logo-negro.png"
+              alt="Logo"
+              width="220"
+              height="28"
+              class="d-inline-block align-text-center"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#home">Inicio</a>
+              <a class="nav-link" href="quienes-somos.html">Quiénes somos</a>
+              <a class="nav-link" href="#">Contáctenos</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-right">
+          <a href="#" class="search-icon">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="search-bar">
+            <input
+              type="text"
+              placeholder="Buscar"
+              onclick="event.stopPropagation();"
+            />
+          </div>
+          <a href="carrito.html" class="cart-button">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <a href="login.html" class="login-button">
+            <button class="btn btn-outline-secondary" type="button">
+              Ingresar
+            </button>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="background_overlay"></div>
+      <img
+        src="media/background3.png"
+        alt="background"
+        class="home_background_img"
+      />
+      <div class="home_text_container">
+        <img
+          class="home_logo"
+          src="media/logo-blanco.png"
+          alt="Logo"
+          width="500"
+          height="70"
+        />
+        <h2 class="home_heading">¡De una cajita a tu boquita!</h2>
+        <p class="home_desc">
+          Descubre los chilaquiles más auténticos y sabrosos, preparados con los
+          ingredientes más frescos. ¡Elige tu favorito y disfruta el verdadero
+          sabor de México!
+        </p>
+      </div>
+    </section> 
+    <!-- Products Section -->
+<section id="products">
+  <h2 class="products_heading">Conoce nuestra variedad de chilaquiles</h2>
+  <div class="products-container">
+    <div class="card-container">
+      <article class="card-article" data-id="1">
+        <img
+          src="media/chilaquiles-rojos.png"
+          alt="Chilaquiles rojos"
+          class="card-image"
+        />
+        <div class="card-data">
+          <h2 class="card-title">Chilaquiles rojos</h2>
+          <span class="card-description">
+            Salsa roja, crema, queso, lechuga, cebolla, cilantro picado,
+            rábanos y aguacate.
+          </span>
+          <p class="card-price">$40.00</p>
+          <div class="hidden payment-button-container">
+            <script
+              src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
+              data-preference-id="565630372-7c2aeb6a-b5a4-4fc0-acc8-680a5d03fb15"
+              data-source="button"
+              class="payment-button"
+            ></script>
+          </div>
+          <button class="card-button" onclick="window.location.href='carrito.html'">Ordenar</button>
+        </div>
+      </article>
+
+      <article class="card-article" data-id="2">
+        <img
+          src="media/chilaquiles-verdes.png"
+          alt="Chilaquiles verdes"
+          class="card-image"
+        />
+        <div class="card-data">
+          <h2 class="card-title">Chilaquiles verdes</h2>
+          <span class="card-description">
+            Salsa verde, crema, queso, lechuga, cebolla, cilantro picado,
+            rábanos y aguacate.
+          </span>
+          <p class="card-price">$40.00</p>
+          <div class="hidden payment-button-container">
+            <script
+              src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
+              data-preference-id="565630372-2bd5d1b1-f4f8-4fe2-8bf8-76fd795b8b78"
+              data-source="button"
+              class="payment-button"
+            ></script>
+          </div>
+          <button class="card-button" onclick="window.location.href='carrito.html'">Ordenar</button>
+        </div>
+      </article>
+
+      <article class="card-article" data-id="3">
+        <img
+          src="media/chilaquiles-huevo.png"
+          alt="Chilaquiles con pollo"
+          class="card-image"
+        />
+        <div class="card-data">
+          <h2 class="card-title">Chilaquiles rojos con topping</h2>
+          <span class="card-description">
+            Salsa a escoger, crema, queso, lechuga, cebolla, cilantro,
+            aguacate y un topping a elegir.
+          </span>
+          <p class="card-price">$50.00</p>
+          <div class="hidden payment-button-container">
+            <script
+              src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
+              data-preference-id="565630372-e13c7722-36f8-476c-b869-29d1fdd16125"
+              data-source="button"
+              class="payment-button"
+            ></script>
+          </div>
+          <button class="card-button" onclick="window.location.href='carrito.html'">Ordenar</button>
+        </div>
+      </article>
+
+      <article class="card-article" data-id="4">
+        <img
+          src="media/chilaquilesverdesconpollo.png"
+          alt="Chilaquiles con huevo"
+          class="card-image"
+        />
+        <div class="card-data">
+          <h2 class="card-title">Chilaquiles verdes con topping</h2>
+          <span class="card-description">
+            Salsa a esoger, crema, queso, lechuga, cebolla, cilantro,
+            aguacate y un topping a elegir.
+          </span>
+          <p class="card-price">$50.00</p>
+          <div class="hidden payment-button-container">
+            <script
+              src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
+              data-preference-id="565630372-fa36481f-6a4f-4ea1-bf1a-acf7df1b3c77"
+              data-source="button"
+              class="payment-button"
+            ></script>
+          </div>
+          <button class="card-button" onclick="window.location.href='carrito.html'">Ordenar</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+  
+
+    <!-- Corporation section -->
+    <section id="corporation">
+      <div class="container-chilacajita">
+        <div class="container-texto">
+          <h3 class="corp-title">¿Por qué chilacajita?</h3>
+          <p class="corp-paragraph">
+            En Chilacajita, entendemos que tu tiempo es valioso, pero también
+            creemos que mereces disfrutar de comidas deliciosas y frescas, así
+            como fáciles de transportar. Es por ello, que hemos creado una
+            propuesta única: Chilaquiles preparados con ingredientes frescos y
+            auténticos, listos para deleitar tu paladar en cada bocado. Pero es
+            no es todo, nos enorgullece presentar nuestros chilaquiles en
+            Chilacajitas, un empaque de caja 100% sustentable que no solo cuida
+            de tu apetito, sino también del medio ambiente.
+          </p>
+        </div>
+      </div>
+      <div class="img-container-corp">
+        <img src="media/corporation.png" alt="corporation" class="img-corp" />
+      </div>
+    </section>
+
+    <!-- Cajitas section -->
+    <section id="cajitas">
+      <div class="container-cajitas">
+        <div class="img-container-cajitas">
+          <img src="media/cajitas.png" alt="cajitas" class="img-cajitas" />
+        </div>
+        <div class="container-texto-cajitas">
+          <h3 class="cajitas-title">Empaque Sostenible</h3>
+          <p class="cajitas-paragraph">
+            Imagina saborear la tradición en cada cucharada mientras contribuyes
+            al bienestar de nuestro planeta. En Chilacajita, nos comprometemos a
+            reducir nuestro impacto ambiental utilizando empaques de cajas de
+            cartón fácil de transportar y que son amigables con el entorno,
+            porque creemos que disfrutar de una deliciosa comida no debería
+            generar residuos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotion section -->
+    <section id="promotion">
+      <div class="container-promotion">
+        <div class="container-texto-prom">
+          <h3 class="prom-title">Promociones</h3>
+          <p class="prom-paragraph">
+            Queremos agradecerte por ser parte de Chilacajita, por lo que en tu
+            próxima compra disfruta de un descuento del 15% aplicable en los
+            siguientes tipos de chilaquiles.
+          </p>
+        </div>
+      </div>
+      <div class="img-container-prom">
+        <img src="media/promocion.png" alt="promoción" class="img-prom" />
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer_container">
+      <div class="footer_left">
+        <p class="footer_copyright">
+          &copy; Proyecto Académico - TecNM Campus Pachuca - Negocios
+          Electrónicos II
+        </p>
+      </div>
+      <div class="footer_right">
+        <a
+          href="https://www.facebook.com/tu_perfil"
+          class="footer_links"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/tu_perfil"
+          class="footer_links"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@tu_perfil"
+          class="footer_links"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

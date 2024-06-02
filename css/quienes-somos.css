@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin-top: 70px;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar-brand{
+    padding-left: 25px;
+}
+
+.nav-right {
+    padding-right: 50px;
+    display: flex;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid #f7c326;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #f7c326;
+	text-decoration-thickness: 2.5px;
+}
+
+.nav-link.active, .nav-link:active {
+    text-decoration: underline;
+    text-decoration-color: #ffe100;
+	text-decoration-thickness: 2.5px;
+}
+
+/* Estilos para el icono de búsqueda */
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ececec;
+    text-decoration: none;
+}
+
+.search-icon i {
+    color: #696969;
+}
+
+.search-icon:hover {
+    background-color: #ffd500;
+}
+
+.search-icon:hover i {
+    color: #363636;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    display: none; /* La barra de búsqueda estará oculta por defecto */
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ececec;
+    border-radius: 40px;
+    padding: 5px;
+	width: 800px;
+}
+
+.search-bar input {
+    width: calc(100% - 10px);
+    padding: 10px;
+	border-radius: 40px;
+    border: none;
+    outline: none;
+	background: transparent;
+}
+
+/* Estilos para mostrar la barra de búsqueda al hacer clic en el icono */
+.search-icon:focus + .search-bar, .search-bar:focus-within {
+    display: block;
+}
+
+/* Carrito de compras */
+.cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ececec;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.cart-button i {
+    color: #696969;
+}
+
+.cart-button:hover {
+    background-color: #ffd500;
+}
+
+.cart-button:hover i {
+    color: #363636;
+}
+
+/* Login */
+.btn {
+	border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: #ffd500;
+	border-color: #ffd500;
+}
+
+.btn:hover {
+    color: #363636;
+}
+
+.login-button {
+	padding-left: 10px;
+}
+
+/* Misión */
+#quienes-somos {
+	padding: 30px 0px;
+}
+
+.somos-heading {
+	font-size: 24px;
+	font-weight: 600;
+	margin: 10px 0;
+    padding-bottom: 40px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #f7c326;
+	text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+.container-mision {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 65px;
+}
+
+.img-container-mision, .container-texto-mision {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.img-container-mision {
+    max-width: 40%;
+    align-items: center;
+    background: #f7c326;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.img-mision {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px;
+}
+
+.container-texto-mision {
+    max-width: 50%;
+    margin-right: 60px;
+}
+
+.mision-title{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #f7c326;
+	text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+
+.mision-paragraph {
+    text-align: justify;
+    padding-top: 40px;
+}
+
+/* Visión */
+#vision {
+	padding: 30px 10px;
+}
+
+.container-vision {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 65px;
+}
+
+.container-texto-vision {
+    max-width: 50%;
+    margin-left: 60px;
+}
+
+.vision-title{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #f7c326;
+	text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+
+.vision-paragraph {
+    text-align: justify;
+    padding-top: 40px;
+}
+
+.img-container-vision, .container-texto-vision {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.img-container-vision {
+    max-width: 40%;
+    align-items: center;
+    background: #f7c326;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.img-vision {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* valores */
+#valores {
+	padding: 30px 0px;
+}
+
+.container-valores {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 65px;
+}
+
+.img-container-valores, .container-texto-valores {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.img-container-valores {
+    max-width: 40%;
+    align-items: center;
+    background: #f7c326;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.img-valores {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-texto-valores {
+    max-width: 50%;
+    margin-right: 60px;
+}
+
+.valores-title{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #f7c326;
+	text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+
+.valores-paragraph {
+    text-align: justify;
+    padding-top: 40px;
+}
+
+/* Footer Styles */
+.footer_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 50px;
+	border-top: 1px solid #b9cbe0;
+}
+
+.footer_copyright {
+	margin: 10px 0;
+    font-size: 13px;
+}
+
+.footer_links {
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.footer_links:hover {
+	text-decoration: underline;
+}
