@@ -28,9 +28,9 @@ app.post("/create_preference", async(req,res)=>{
 
         },],
         back_urls: {
-            success: "https://chilacajita.odoo.com",
-            failure: "https://chilacajita.odoo.com",
-            pending: "https://chilacajita.odoo.com",
+            success: "https://williamjasso.github.io/ecommerce-chilacajita/index.html",
+            failure: "https://williamjasso.github.io/ecommerce-chilacajita/index.html",
+            pending: "https://williamjasso.github.io/ecommerce-chilacajita/index.html",
         },
         auto_return: "approved",
     };
