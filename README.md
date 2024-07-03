@@ -47,4 +47,3 @@ Thank you for visiting our project and supporting Chilacajita!
 
 ---
 
-**Note:** Remember to replace placeholders like `https://github.com/your_username/chilacajita.git` and `contact@chilacajita.com` with the relevant information for your project.
